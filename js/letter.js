@@ -39,7 +39,9 @@ function loadingPage() {
 	heart_div.css('left', (page_width - heart_width) / 2);
 }
 
-$("#open").click(function () {
+// 使用 document 的事件委托方式确保正常工作
+$(document).on('click', '#open', function (e) {
+	e.preventDefault();
 	if (!envelope_opened) {
 		$('#wax-half').css('display', "block");
 		new Typed('.letter', {
