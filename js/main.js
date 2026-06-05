@@ -3,29 +3,21 @@ let envelope_opened = false;
 
 // 将 JSON 数据直接嵌入到 JavaScript 中
 let content = {
-    salutation: "亲爱的唐嘉美",
-    signature: "小鹿",
+    salutation: "可爱的唐嘉美同学",  // ← 修改这里：改为收件人名字
+    signature: "田从树",  // ← 修改这里：改为发件人签名
 
-    body: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果那天...没有见到你<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想我不会那么伤心<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么难过<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不会泪流满面<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是如果没有遇见你<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我就不会了解<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此高兴<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此温柔<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此可爱<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此温暖<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此幸福的感觉<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在还好吗?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我...现在还和天空恋爱着`,
+    body: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虽然在第一次的相处中不是很愉快<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;甚至还让你哭的那么伤心，那么难过<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想说"对不起"！<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这几天的相处中，你的身影慢慢占据了我的心思。和你聊天时的轻松与快乐，见到你时心底骤然的欢喜，都在悄悄提醒我，我发现已经喜欢上你了。我欣赏你的温柔与真诚，还有那份天真的可爱，开心时想第一时间分享喜悦，低落时总想陪在你身边。我不敢贸然打扰你的生活，却实在藏不住满心的心动。我不求立刻得到答案，只是坦诚心意。如果你对我也有一丝好感，我愿意用心陪伴，慢慢奔赴往后的朝夕<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望你能再给我一次爱你、珍惜你的机会`,  // ← 修改这里：改为表白内容
     sign: 0,
 
     // 其他字段
-    recipient: "To&nbsp;&nbsp;XXX",
-    sender: "Flip",
-    title: "Letter to you",
-    bgm: "https://music.163.com/song/media/outer/url?id=1902252102.mp3"
+    recipient: "To&nbsp;&nbsp;唐嘉美",  // ← 修改这里：改为收件人显示名
+    sender: "I love you",  // ← 可选：修改发件人显示
+    title: "Letter to you",  // ← 可选：修改网页标题
+    bgm: "https://music.163.com/song/media/outer/url?id=1969373959.mp3"  // ← 修改这里：改为背景音乐链接
 
     // 如果你想使用本地文件，可以改为：
     // bgm: "audio/bgm.mp3"  // 本地文件路径
