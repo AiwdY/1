@@ -8,7 +8,7 @@ let content = {
 
     body: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虽然在第一次的相处中不是很愉快<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;甚至还让你哭的那么伤心，那么难过<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想说"对不起"！<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想说“对不起”！<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这几天的相处中，你的身影慢慢占据了我的心思。和你聊天时的轻松与快乐，见到你时心底骤然的欢喜，都在悄悄提醒我，我发现已经喜欢上你了。我欣赏你的温柔与真诚，还有那份天真的可爱，开心时想第一时间分享喜悦，低落时总想陪在你身边。我不敢贸然打扰你的生活，却实在藏不住满心的心动。我不求立刻得到答案，只是坦诚心意。如果你对我也有一丝好感，我愿意用心陪伴，慢慢奔赴往后的朝夕<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望你能再给我一次爱你、珍惜你的机会`,  // ← 修改这里：改为表白内容
     sign: 0,
