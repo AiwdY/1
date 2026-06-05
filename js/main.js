@@ -3,7 +3,7 @@ let envelope_opened = false;
 
 // 将 JSON 数据直接嵌入到 JavaScript 中
 let content = {
-    salutation: "亲爱的XXX",
+    salutation: "亲爱的唐嘉美",
     signature: "小鹿",
 
     body: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果那天...没有见到你<br>
