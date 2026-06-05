@@ -44,21 +44,37 @@ $(document).on('click', '#open', function (e) {
 	e.preventDefault();
 	if (!envelope_opened) {
 		$('#wax-half').css('display', "block");
-		new Typed('.letter', {
-			strings: [
-				"^1000",
+		
+		// 确保 Typed 库已加载
+		if (typeof Typed !== 'undefined') {
+			new Typed('.letter', {
+				strings: [
+					"^1000",
+					content.salutation + "<br><br>" +
+					content.body + "<br><br><p style='float:right; display:block; width:" +
+					content.sign + "px;'>^1000" + content.signature + "</p>"
+				],
+				typeSpeed: 100,
+				backSpeed: 50,
+				contentType: 'html'
+			});
+		} else {
+			// 如果 Typed 未加载，直接显示文本
+			$('.letter').html(
 				content.salutation + "<br><br>" +
 				content.body + "<br><br><p style='float:right; display:block; width:" +
-				content.sign + "px;'>^1000" + content.signature + "</p>"
-			],
-			typeSpeed: 100,
-			backSpeed: 50
-		});
+				content.sign + "px;'>" + content.signature + "</p>"
+			);
+		}
+		
 		$('#open').find("span").eq(0).css('background-position', "0 -150px");
 		envelope_opened = true;
+		
 		let player = document.getElementById('music');
-		if (player.paused) {
-			player.play();
+		if (player && player.paused) {
+			player.play().catch(function(error) {
+				console.log("音乐播放被阻止:", error);
+			});
 			$('#music_btn').css("display", "block");
 		}
 	}
